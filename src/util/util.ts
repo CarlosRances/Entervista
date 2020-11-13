@@ -18,6 +18,11 @@ export async function openApp() {
     return driver;
 }
 
+export function closeApp(driver:WebDriver) {
+    return driver.quit();
+}
+
+
 export async function waitForElementByXpath(driver: WebDriver, xpath: string, timeout = 20000) {
     return driver.wait( until.elementLocated(By.xpath(xpath)), timeout );
 }

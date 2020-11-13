@@ -1,5 +1,5 @@
 import { Key, WebDriver } from "selenium-webdriver";
-import { delay, findByCss, findByXpath, waitForElementByCss } from "../util/util";
+import { closeApp, delay, findByCss, findByXpath, waitForElementByCss } from "../util/util";
 
 const google = 'input[name="q"]';
 const clickOnYahooMail = '//div/div[@class="g"][1]/div/div/div/div/a/h3';
@@ -119,5 +119,7 @@ export async function sendEmail (driver: WebDriver) {
     await delay();
 
     console.log("Test Case Finished");
+
+    await closeApp(driver);
 
 }
