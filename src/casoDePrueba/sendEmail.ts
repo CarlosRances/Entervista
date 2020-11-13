@@ -1,7 +1,6 @@
 import { WebDriver } from "selenium-webdriver";
 
 const google = 'input[name="q"]';
-const gmailText = '//div[@id="wp-tabs-container"]/*//span[contains(text(), "Gmail")]';
 const clickOnYahooMail = '//div/div[@class="g"][1]/div/div/div/div/a/h3';
 const logoYahoo = '//div[@id="login-body"]/div/span/a/img';
 const logoYahooMail = '//body[@id="signin-main"]/div/img';
